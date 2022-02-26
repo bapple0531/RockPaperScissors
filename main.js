@@ -1,6 +1,6 @@
 const getUserChoice = userInput => {
     userInput = userInput.toLowerCase();
-    if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') {
+    if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb') {
 return userInput;
     } else {
         console.log('Error, invalid input!');
@@ -41,6 +41,9 @@ if (userChoice === 'scissors') {
 } else {
     return 'You are the winner!';
 }
+    if (userChoice === 'bomb') {
+        return 'You are the winner!';
+    }
 };
 
 const playGame = () => {
